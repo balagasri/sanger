@@ -1,12 +1,12 @@
 
 # dynamically generated files
-assets/stylesheets/css/styles.css
-assets/stylesheets/css/styles.css.map
+## assets/stylesheets/css/styles.css
+## assets/stylesheets/css/styles.css.map
 assets/stylesheets/.sass-cache
 
 
 # IntelliJ WebStrom, PHPStrom
-.idea
+## .idea
 
 
 
@@ -16,4 +16,4 @@ assets/stylesheets/.sass-cache
 
 # Add rules above this line
 # add gitkeep files
-!.gitkeep
+## !.gitkeep
