@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carolinas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Carolinas">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link href="assets/stylesheets/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- animation links - start -->
+    <link href="assets/stylesheets/css/aos.css" rel="stylesheet">
+    <!-- animation links - end -->
+</head>
+
+<body class="aos-all">
+    <!------header-starts-------->
+    <div class="header">
+        <div class="primary_bar dark-red-bg  ">
+            <div class="container">
+                <div class="row">
+                    <p class="text-center white">Are you a patient? <a href="http://www.carolinashealthcare.org/hm-outcomes?hcmacid=a0bi000000ccGcZ" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'Click', eventLabel: 'AreYouAPatientClickHere'});">Visit our site</a> or call <a href="tel:704-512-2167 " class="phone-number">704-512-2167</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="secoundary_bar white-bg">
+            <div class="container">
+                <div class="row logo-block">
+                    <div class="col-sm-6 grid">
+                        <a href="http://www.carolinashealthcare.org/" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'Click', eventLabel: 'CHSHomePageLogo'});"><img src="assets/images/logo.png" /></a>
+                    </div>
+                    <div class="col-sm-6 grid second-grid">
+                        <p class="refer-text dark-cyan ">Refer a patient: <a href="tel:8779997484" class="dark-cyan">877-999-7484</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------header-ends-------->
+    <!-- Outcomes - start -->
+    <div class="form-success-component white-bg" id="form-success-component">
+        <div class="container">
+            <div class="row">
+                <div class="download-report-container">
+                    <!-- image -->
+                    <div class="col-md-4 download-report-image" data-aos="fade" data-aos-duration="600" data-aos-once="true"> <img src="assets/images/report-image-big.jpg" alt="image" /> </div>
+                    <!-- form -->
+                    <div class="col-md-5 download-report-success">
+                        <div class="grid-description">
+                            <!-- <div class="grid-primary-heading text-uppercase">
+								Thank You. Enjoy your Sanger report
+							</div> -->
+                            <div class="grid-paragraph black">
+                                <div class="text-block">Thank you for your interest in Sanger Heart & Vascular Institute.</div>
+                                <div class="text-block">To learn more, please call us at 877-999-7484.</div>
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <div class="col-md-12 button-container"> <a href="#" class="button" data-aos="zoom-in" data-aos-delay="250" data-aos-once="true">DOWNLOAD FULL REPORT</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Outcomes - end -->
+    <!----footer starts----->
+    <div class="footer dark-cyan-bg">
+        <div class="container">
+            <div class="col-sm-12 footer-text">
+                <p> &#169; 2016 Carolinas HealthCare System <a href="tel:877-999-7484">877-999-7484</a></p>
+            </div>
+            <div class="col-sm-12 footer-links">
+                <ul>
+                    <li><a href="http://www.carolinashealthcare.org/" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'Click', eventLabel: 'BottomHomePage'});">Main Site</a></li>
+                    <li><a href="http://www.carolinashealthcare.org/terms-of-use?hcmacid=a0bi000000ccGcZ" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'Click', eventLabel: 'BottomTermsOfUse'});">Terms of Use</a></li>
+                    <li><a href="http://www.carolinashealthcare.org/for-patients-visitors/privacy?hcmacid=a0bi000000ccGcZ" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'Click', eventLabel: 'BottomPrivacyPolicy'});">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!----footer-ends----->
+    <script src="assets/js/jquery-1.11.3.js"></script>
+    <script>
+        $(window).on('load resize', function () {
+            var header_height = $('.header').height();
+            $('.form-success-component').css({
+                marginTop: header_height
+            , })
+        });
+    </script>
+    <!-- animation scripts start -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+            , disable: window.innerWidth < 768
+        });
+    </script>
+    <!-- animation scripts end -->
+	
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MF4MN9"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MF4MN9');</script>
+	<!-- End Google Tag Manager -->
+
+</body>
+
+</html>

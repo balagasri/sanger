@@ -1,0 +1,130 @@
+/*  relentless Component csss  */
+
+.relentless-component {
+    padding: 30px 0 20px;
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        padding: 25px 0;
+    }
+    .component-header {
+        max-width: 980px;
+        margin: 20px auto 40px;
+        .grid-primary-heading {
+            text-transform: uppercase;
+        }
+        .grid-paragraph {
+            padding-top: 4px;
+        }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+            margin: 0 auto;
+            .grid-primary-heading {
+                letter-spacing: -2px;
+            }
+        }
+    }
+    .component-body {
+        display: table;
+        padding-top: 25px;
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+            padding: 25px 0 0 0;
+        }
+        .grid-title {
+            font: 20px/1 $AvenirBlack;
+            text-align: center;
+            color: $white;
+            margin: 15px 0 30px;
+            color: #fcfafa;
+            @media screen and (min-width: 0px) and (max-width: 1023px) {
+                margin: 15px 0 30px;
+            }
+        }
+        .grid {
+            @media screen and (min-width: 0px) and (max-width: 1023px) {
+                margin-bottom: 30px;
+                padding: 0;
+            }
+            ul {
+                li {
+                    font: 20px/1.2 $Primary_font;
+                    color: $white;
+                    list-style-type: none;
+                    margin-bottom: 10px;
+                    position: relative;
+                    padding-left: 15px;
+                    &:before {
+                        content: '.';
+                        color: $white;
+                        line-height: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0px;
+                        font-size: 35px;
+                    }
+                    span {
+                        font: 20px/1.2 $AvenirMedium;
+                    }
+                }
+            }
+            img {
+                margin-bottom: 20px;
+            }
+        }
+        .grid1 {
+            .grid-title {
+                text-align: left;
+                margin-left: 90px;
+                @media screen and (min-width: 0px) and (max-width: 990px) {
+                    text-align: center;
+                    margin-left: auto;
+                }
+            }
+        }
+        .grid3 {
+            .grid-title {
+                margin: 15px 0 30px;
+            }
+            ul {
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+            img {
+                max-width: 152px;
+                @media screen and (min-width: 0px) and (max-width: 767px) {
+                    max-width: none;
+                }
+            }
+        }
+        .custom-image-num-block {
+            margin: 5px auto;
+            display: table;
+            max-width: 260px;
+            .value-block {
+                display: table;
+                .editable-number {
+                    font: 100px/1 $Primary_font;
+                    color: $white;
+                    display: table-cell;
+                    line-height: 75px;
+                    vertical-align: middle;
+                    border-right: 1px solid $white;
+                    padding: 0 15px 0 0;
+                    letter-spacing: -5px;
+                }
+                .img-block {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 0 0 0 15px;
+                }
+                img {
+                    margin-bottom: 0;
+                }
+            }
+            .text-block {
+                font: 20px/1.2 $Primary_font;
+                color: $white;
+                text-align: center;
+                margin: 15px 0;
+            }
+        }
+    }
+}

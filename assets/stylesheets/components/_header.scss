@@ -1,0 +1,323 @@
+/* header css */
+
+.header {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 9999;
+    -webkit-transform: translate3d(0, 0, 0);
+    .primary_bar {
+        p {
+            font: 20px/1 $AvenirRoman;
+            padding: 11px;
+            margin: 0;
+            a {
+                color: $white;
+                padding: 0 2px;
+               
+                &:focus {
+                    text-decoration: none;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+				
+				&.phone-number{
+					padding: 0 0 0 0;
+				}
+            }
+            a:first-child {
+                border-bottom: 1px solid #fff;
+                 &:hover{
+                    text-decoration: none;
+                }
+            }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+                font: 12px/1 $AvenirRoman;
+                padding: 11px 5px;
+            }
+        }
+    }
+    .secoundary_bar {
+        padding: 31px 0;
+		transition: padding 0.3s ease;
+        -webkit-transition: padding 0.3s ease;
+        -moz-transition: padding 0.3s ease;
+        /*
+		transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+		*/
+        -webkit-box-shadow: 0 5px 10px -5px #000000;
+        -moz-box-shadow: 0 5px 10px -5px #000000;
+        box-shadow: 0 5px 10px -5px #000000;
+        .logo-block {
+            margin: 0;
+            .grid {
+                padding-left: 30px;
+                img {
+                    width: 100%;
+                    max-width: 345px;
+                }
+                .refer-text {
+                    margin: 0;
+                    font: 20px/1 $AvenirRoman;
+                    /* margin-top: 40px; */
+                    margin-top: 30px;
+                    a {
+                        font: 20px/1 $AvenirRoman;
+                        &:hover {
+                            color: $dark_cyan;
+                        }
+                    }
+                }
+            }
+            .second-grid {
+                padding-right: 30px;
+                .refer-text {
+                    text-align: right;
+                }
+                @media screen and (min-width: 0px) and (max-width: 767px) {
+                    padding-right: 0;
+                    .refer-text {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+            padding: 22px;
+            .container {
+                padding: 0;
+                .grid {
+                    padding: 0;
+                    text-align: center;
+                    img {
+                        width: 100%;
+                        max-width: 275px;
+                    }
+                }
+            }
+        }
+		@media screen and (min-width: 0px) and (max-width: 549px) {
+            padding: 22px 0;	//to remove left right spacing for logo and phone text
+        }
+		@media screen and (min-width: 450px) and (max-width: 549px) {
+			padding: 22px;	//to add left right spacing for logo and phone text
+			.grid {
+                width: 50%;
+                float: left;
+                .refer-text {
+                    width: 150px;
+                    margin: 0 auto 0 !important;
+                    line-height: 24px !important;
+                }
+            }
+        }
+        @media screen and (min-width: 550px) and (max-width: 767px) and (orientation: landscape) {}
+        @media screen and (min-width: 550px) and (max-width: 767px) {
+                padding: 15px 22px;
+            .grid {
+                width: 50%;
+                float: left;
+                .refer-text {
+                    width: 150px;
+                    margin: 5px auto 0 !important;
+                    line-height: 24px !important;
+                }
+            }
+        }
+    }
+}
+
+
+/*-----inside look component css------*/
+
+.inside-look-component {
+    /*   transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;*/
+    padding: 40px 0;
+    /* margin-top: 175px; */
+	margin-top: 179px;
+	@media screen and (min-width: 768px) and (max-width: 1024px) {
+		margin-top: 174px;
+	}
+	@media screen and (min-width: 0px) and (max-width: 767px) {
+        /* margin-top: 196px; */
+        margin-top: 184px;
+    }
+	@media screen and (min-width: 450px) and (max-width: 549px) {
+		margin-top: 130px;
+	}
+    @media only screen and (min-width: 550px) and (max-width: 767px) and (orientation: landscape) {}
+    @media only screen and (min-width: 550px) and (max-width: 767px) {
+        margin-top: 122px;
+    }
+    .grid-secondary-heading {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: #fdf8f8;
+    }
+    .grid-primary-heading {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: #fdf8f8;
+    }
+    .grid-paragraph {
+        padding: 0;
+        color: #fcf8f8;
+    }
+    .tinynav {
+        display: none
+    }
+    .navigation {
+        clear: both;
+        padding: 0;
+        ul {
+            display: table;
+            margin: 10px auto;
+            li {
+                list-style-type: none;
+                padding: 0 10px;
+                display: inline-block;
+                a {
+                    color: $white;
+                    text-transform: uppercase;
+                    font: 20px/1 $AvenirLight;
+                    padding: 2px 10px;
+                    text-decoration: none;
+                    &:hover {
+                        border-bottom: 3px solid $white;
+                        text-decoration: none;
+						@media screen and (min-width: 0px) and (max-width: 1024px) {
+							border-bottom: 0px solid $white;
+						}
+                    }
+                }
+                a.active {
+                    border-bottom: 3px solid $white;
+                }
+            }
+            li.mobile-list-element {
+                display: none;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+            .select-style {
+                position: relative;
+                border: 1px solid #808080;
+                width: 100%;
+                border-radius: 5px;
+                overflow: hidden;
+                background: #ffffff;
+                background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #c9c9c9 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #c9c9c9));
+                background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #c9c9c9 100%);
+                background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #c9c9c9 100%);
+                background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #c9c9c9 100%);
+                background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #c9c9c9 100%);
+                //filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c9c9c9', GradientType=0);
+                background-repeat: no-repeat;
+                /* &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-image: url(../../images/select-dropdown-icon.png);
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    width: 25px;
+                    height: 25px;
+                }*/
+                select {
+                    padding: 0px 10px;
+                    width: 100%;
+                    border: none;
+                    box-shadow: none;
+                    background: transparent;
+                    background-image: none;
+                    font: 13px/1 $AvenirMedium;
+                    color: #616161;
+                    text-transform: capitalize;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    height: 25px;
+                    background-image: url(../../images/select-dropdown-icon.png);
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    border-radius: 0;
+                }
+                select:focus {
+                    outline: none;
+                }
+                select::-ms-expand {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        padding: 30px 0;
+        .container {
+            padding: 0;
+        }
+        .grid-primary-heading {
+            letter-spacing: -2px;
+        }
+        .navigation {
+            padding: 15px !important;
+            .tinynav {
+                display: block;
+                width: 100%;
+                font: 13px/1 $AvenirRoman;
+                padding: 6px;
+                border-radius: 5px;
+                text-transform: capitalize;
+            }
+            #nav {
+                display: none
+            }
+        }
+    }
+	@media screen and (min-width: 768px) {
+		padding: 40px 0 30px 0;
+		.goto-form-component{
+			margin-bottom: 30px;
+		}
+		.navigation{
+			padding: 10px 0;
+			height: 62px !important;
+			ul{
+				padding: 10px 0;
+				width: 100%;
+				text-align: center;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.navigation-fixed {
+    position: fixed;
+    /* top: 174px; */
+    top: 127px;
+    width: 100%;
+    z-index: 9;
+    background: #008996;
+    left: 0;
+    padding: 10px 0 !important;
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        /* top: 194px; */
+		top: 138px;
+    }
+	@media screen and (min-width: 450px) and (max-width: 549px) {
+		top: 102px;
+	}
+    @media only screen and (min-width: 550px) and (max-width: 767px) and (orientation: landscape) {}
+    @media only screen and (min-width: 550px) and (max-width: 767px) {
+        /* top: 121px; */
+		top: 107px;
+    }
+}

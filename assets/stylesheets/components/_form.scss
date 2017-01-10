@@ -1,0 +1,201 @@
+/* form scss */
+
+
+.form-component{
+	color: #070707;
+	padding: 52px 0 20px 0;
+	@media screen and (min-width: 0px) and (max-width: 1023px){
+		padding: 32px 0 20px 0;
+	}
+	.grid-tertiary-heading{
+		padding-bottom: 54px;
+		color: #070707;
+		@media screen and (min-width: 0px) and (max-width: 1023px){
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+		}
+	}
+	
+	.download-report-container{
+		.download-report-image{
+			width: 100%;
+			max-width: 380px;
+			@media screen and (min-width: 0px) and (max-width: 767px){
+				display: none;
+			}
+			@media screen and (min-width: 768px) and (max-width: 1023px){
+				max-width: 100%;
+				text-align: center;
+			}
+			img{
+				padding-left: 45px;
+				@media screen and (min-width: 768px) and (max-width: 1023px){
+					padding-left: 0;
+				}
+			}
+		}
+		
+		/* form */
+		.download-report-form{
+			font-family: $Primary_font;
+			font-size: 20px;
+			color: #070707;
+			width: 100%;
+			max-width: 520px;
+			padding: 0;
+			@media screen and (min-width: 0px) and (max-width: 1023px){
+				width: 100%;
+				max-width: 100%;
+				padding: 0 13px 0 19px;
+			}
+         
+			@media screen and (min-width: 1023px){
+				margin-top: -14px;
+			}
+			.field-label{
+				color: #070707;
+				font-family: $Primary_font;
+				font-size: 20px;
+				font-weight: normal;
+				line-height: 38px;
+				sup{
+					color: $dark_red;
+					top: -1px;
+				}
+			}
+			label{
+				font-weight: normal;
+			}
+			.text-field{
+				color: #070707;
+				font-family: $Primary_font;
+				font-size: 20px;
+				width: 100%;
+				border: 1px solid #959595;
+				padding: 15px 10px;
+				line-height: 28px;
+				&:focus{
+					outline: 0;
+				}
+			}
+			
+			.checkboxes{
+				.newsletter-sign-up-checkbox-label{
+					padding-left: 34px;
+				}
+			}
+		}
+	}
+	
+	.required-all-fields{
+		color: $dark_red;
+		font-family: $AvenirBlack;
+		font-size: 15px;
+		/* padding: 21px 0 32px 0; */
+		padding: 21px 0 0 0;
+		@media screen and (min-width: 0px) and (max-width: 1023px){
+			/* padding: 21px 0 41px 0; */
+			padding: 21px 0 0 0;
+		}
+	}
+	.help-text{
+		padding: 0 0 18px 0;
+		line-height: 24px;
+		@media screen and (min-width: 0px) and (max-width: 1023px){
+			padding: 0 0 23px 0;
+		}
+	}
+	.need-primary-care-doctor{
+		padding: 0 0 22px 0;
+		@media screen and (min-width: 0px) and (max-width: 1023px){
+			padding: 0 0 32px 0;
+		}
+	}
+	
+	.button{
+		margin: 52px auto 45px auto;
+		@media screen and (min-width: 0px) and (max-width: 1023px){
+			margin: 51px auto 39px auto;
+		}
+	}
+}
+
+
+/* checkbox css */
+.checkboxCSS{
+	.checkbox-type{
+		visibility: hidden;
+		position: absolute;
+	}
+	input[type=checkbox] + label{
+		position: relative;
+		line-height: 24px;
+		padding-left: 30px;
+	}
+	input[type=checkbox] + label:after{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #959595;
+		left: 0;
+		top: 0;
+	}
+	
+	input[type=checkbox]:checked + label {
+	  /* color: #f00;
+	  font-style: normal; */
+	} 
+	
+	input[type=checkbox]:checked + label:before {
+		content:"\e013";
+		font-family: $bootstrapGlyphicons;
+		position: absolute;
+		left: 4px;
+		top: -2px;
+		color: #000000;
+		font-weight: bold;
+		font-size: 12px;
+	} 
+}
+
+
+/* radio button css */
+.radiobuttonCSS{
+	.radiobutton-type{
+		visibility: hidden;
+		position: absolute;
+	}
+	input[type=radio] + label{
+		position: relative;
+		line-height: 24px;
+		padding-left: 30px;
+		padding-right: 14px;
+	}
+	input[type=radio] + label:after{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #959595;
+		left: 0;
+		top: 0;
+	}
+	
+	input[type=radio]:checked + label {
+	  /* color: #f00;
+	  font-style: normal; */
+	} 
+	
+	input[type=radio]:checked + label:before {
+		content:"\e013";
+		font-family: $bootstrapGlyphicons;
+		position: absolute;
+		left: 4px;
+		top: -2px;
+		color: #000000;
+		font-weight: bold;
+		font-size: 12px;
+	} 
+}

@@ -1,0 +1,43 @@
+/*  footer  */
+
+.footer {
+    padding: 25px 0;
+    text-align: center;
+    .footer-text {
+        font: 12px/1 $AvenirRoman;
+        color: #fdfbfb;
+        p {
+            padding: 0 0 5px;
+            a{
+                color: #fdfbfb;
+            }
+        }
+    }
+    .footer-links {
+        ul {
+            display: table;
+            margin: 0 auto;
+            li {
+                list-style-type: none;
+                float: left;
+                &:after {
+                    content: '|';
+                    color: #fdfbfb;
+                    padding: 0 6px;
+                }
+                a {
+                    font: 12px/1 $AvenirRoman;
+                    text-transform: capitalize;
+                    text-decoration: underline;
+                    color: $white;
+                }
+            }
+            li:last-child {
+                &:after {
+                    content: '';
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
